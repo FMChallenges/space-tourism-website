@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+<meta name="author" content="Miguel92"/>
+<meta name="description" content="Space - Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it."/>
+<meta name="images" content="./preview.jpg"/>
+<meta name="language" content="Spanish"/>
+<meta name="theme-color" content="#333333"/>
+<meta name="title" content="Space tourism website"/>
+
+<title>Frontend Mentor | Space tourism website</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400;500;600&family=Bellefair&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="./assets/css/global-space.css">
+</head>
+<body class="bghome">
+
+	<main class="d-flex justify-content-between flex-column w-100 vh-100 scrollY-auto">
+	
+		<nav class="navbar position-fixed w-100">
+
+			<div class="menu-toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+
+			<a class="navbar-brand rounded-circle nav_link_toggle" href="#home">
+				<img src="./assets/images/shared/logo.svg" alt="log site menu" title="Space tourism website">
+			</a>
+
+			<div class="navbar-line"></div>
+
+			<div class="navbar-collapse">
+				
+				<div class="navbar-menu-content">
+					<div class="nav-item active">
+						<a href="#home" class="nav_link_toggle nav-link navbar-text">
+							<strong>00</strong> 
+							<span>Home</span>
+						</a>
+					</div>
+					<div class="nav-item">
+						<a href="#destination" class="nav_link_toggle nav-link navbar-text">
+							<strong>01</strong> 
+							<span>Destination</span>
+						</a>
+					</div>
+					<div class="nav-item">
+						<a href="#crew" class="nav_link_toggle nav-link navbar-text">
+							<strong>02</strong> 
+							<span>Crew</span>
+						</a>
+					</div>
+					<div class="nav-item">
+						<a href="#technology" class="nav_link_toggle nav-link navbar-text">
+							<strong>03</strong> 
+							<span>Technology</span>
+						</a>
+					</div>
+				</div>
+
+			</div>
+
+		</nav>
+
+
+		<!-- Para agregar la plantilla correnpondiente -->
+		<div id="app"></div>
+
+		<template id="home">
+			<link rel="stylesheet" href="./assets/css/space-home.css">
+			<section class="d-flex justify-content-end align-items-end h-100">
+				<div class="section-content d-grid">
+					<div class="column-1 position-relative d-flex justify-content-end align-items-start flex-column">
+						<div class="section-head">
+							<span class="d-block fst-normal text-uppercase fw-400">So, you want to travel to</span>
+							<span class="d-block fst-normal text-uppercase fw-400">Space</span>
+						</div>
+						<div class="section-text">
+							<p class="fst-normal fw-400 d-block">Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</p>
+						</div>
+					</div> 
+					<div class="column-2 d-flex justify-content-center align-items-end">
+						<div class="explorer rounded-circle d-flex justify-content-center align-items-center">
+							<span class="text-uppercase">Explore</span>
+						</div>
+					</div>
+				</div>
+			</section>
+		</template>
+	</main>
+
+	<script src="./assets/js/navigation.js"></script>
+</body>
+</html>

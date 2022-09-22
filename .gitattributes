@@ -1,0 +1,4 @@
+*.css -crlf
+*.html -crlf
+*.js -crlf
+*.md -crlf
