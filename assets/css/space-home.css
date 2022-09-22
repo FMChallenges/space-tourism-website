@@ -1,3 +1,19 @@
+.video {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	background-color: rgba(var(--dark), 0.05);
+	backdrop-filter: blur(4px);
+	padding: 1rem;
+}
+@media screen and (max-width: 768px) {
+	.video {
+		padding: 0;
+	}
+}
 section {
 	padding-bottom: 5rem;	
 }
@@ -5,7 +21,6 @@ section .section-content {
 	margin: 0 auto;
 	width: 82%;
 	grid-template-columns: repeat(2, 1fr);
-	overflow-y: auto;
 }
 @media screen and (max-width: 1024px) {
 	section .section-content {

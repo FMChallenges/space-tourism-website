@@ -136,16 +136,8 @@ html, body {
 .vh-100 { height: 100vh; }
 .min-vh-100 { min-height: 100vh; }
 
-.heading-1, .heading-2, .heading-3, .heading-4, .subheading-1 {
-	font-family: var(--font-family-bellefair);
-	font-weight: 400;
-}
-.heading-5, .subheading-2, .navbar-text, .body-text {
-	font-family: var(--font-family-barlow);
-}
-.subheading-2, .body-text {
-	font-weight: 400;
-}
+.bellefair { font-family: var(--font-family-bellefair); }
+.barlow { font-family: var(--font-family-barlow); }
 .heading-1 { font-size: 9.375rem; }
 .heading-2 { font-size: 6.25rem; }
 .heading-3 { font-size: 3.5rem; }
@@ -184,43 +176,43 @@ body {
 	background-size: cover;
 	background-attachment: fixed;
 }
-.bghome {
+[bg=home] {
 	--background: url('../images/home/background-home-desktop.jpg');
 }
-.bgdestination {
+[bg=destination] {
 	--background: url('../images/destination/background-destination-desktop.jpg');
 }
-.bgcrew {
+[bg=crew] {
 	--background: url('../images/crew/background-crew-desktop.jpg');
 }
-.bgtechnology {
+[bg=technology] {
 	--background: url('../images/technology/background-technology-desktop.jpg');
 }
 @media screen and (max-width: 768px) {
-	.bghome {
+	[bg=home] {
 		--background: url('../images/home/background-home-tablet.jpg');
 	}
-	.bgdestination {
+	[bg=destination] {
 		--background: url('../images/destination/background-destination-tablet.jpg');
 	}
-	.bgcrew {
+	[bg=crew] {
 		--background: url('../images/crew/background-crew-tablet.jpg');
 	}
-	.bgtechnology {
+	[bg=technology] {
 		--background: url('../images/technology/background-technology-tablet.jpg');
 	}
 }
 @media screen and (max-width: 767px) {
-	.bghome {
+	[bg=home] {
 		--background: url('../images/home/background-home-mobile.jpg');
 	}
-	.bgdestination {
+	[bg=destination] {
 		--background: url('../images/destination/background-destination-mobile.jpg');
 	}
-	.bgcrew {
+	[bg=crew] {
 		--background: url('../images/crew/background-crew-mobile.jpg');
 	}
-	.bgtechnology {
+	[bg=technology] {
 		--background: url('../images/technology/background-technology-mobile.jpg');
 	}
 }

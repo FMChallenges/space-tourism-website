@@ -49,9 +49,12 @@ This is how the completed page should look
 
 Still in development
 
+I have added an action in "EXPLORER", that when pressing/clicking it will show a video and depending on the resolution it will show an SD video or a full HD one
+
 ### Useful resources
 
 - [Using templates and slots](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_templates_and_slots) - This article explains how you can use the <template> and <slot> elements to create a flexible template that can then be used to populate the shadow DOM of a web component.
+- [Vídeo of Pixabay](https://www.pexels.com/es-es/video/vista-de-la-tierra-por-la-noche-desde-el-espacio-854913/)
 
 ## Author
 

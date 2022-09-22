@@ -21,7 +21,7 @@
 
 <link rel="stylesheet" href="./assets/css/global-space.css">
 </head>
-<body class="bghome">
+<body class="body-text" bg="home">
 
 	<main class="d-flex justify-content-between flex-column w-100 vh-100 scrollY-auto">
 	
@@ -76,8 +76,11 @@
 		<!-- Para agregar la plantilla correnpondiente -->
 		<div id="app"></div>
 
+		<!-- ========== PANTALLA HOME ========== -->
 		<template id="home">
+			<!-- CARGAMOS ESTILOS -->
 			<link rel="stylesheet" href="./assets/css/space-home.css">
+			<!-- CARGAMOS SECTION -->
 			<section class="d-flex justify-content-end align-items-end h-100">
 				<div class="section-content d-grid">
 					<div class="column-1 position-relative d-flex justify-content-end align-items-start flex-column">
@@ -91,7 +94,7 @@
 					</div> 
 					<div class="column-2 d-flex justify-content-center align-items-end">
 						<div class="explorer rounded-circle d-flex justify-content-center align-items-center">
-							<span class="text-uppercase">Explore</span>
+							<span class="pointer-events-none text-uppercase">Explore</span>
 						</div>
 					</div>
 				</div>
