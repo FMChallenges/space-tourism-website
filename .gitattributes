@@ -2,3 +2,4 @@
 *.html -crlf
 *.js -crlf
 *.md -crlf
+*.json -crlf
