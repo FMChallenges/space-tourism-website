@@ -138,6 +138,7 @@ html, body {
 
 .bellefair { font-family: var(--font-family-bellefair); }
 .barlow { font-family: var(--font-family-barlow); }
+
 .heading-1 { font-size: 9.375rem; }
 .heading-2 { font-size: 6.25rem; }
 .heading-3 { font-size: 3.5rem; }
@@ -162,6 +163,26 @@ html, body {
 .scrollY-auto {
 	overflow-y: auto;
 }
+::-webkit-scrollbar {
+	background: rgba(var(--white), 0.04);
+}
+::-webkit-scrollbar:vertical {
+   width:5px;
+}
+::-webkit-scrollbar-button:increment,
+::-webkit-scrollbar-button {
+   display: none;
+} 
+::-webkit-scrollbar:horizontal {
+   height:5px;
+}
+::-webkit-scrollbar-thumb {
+   background-color: rgba(var(--white), 0.40);
+   border-radius: .2rem;
+}
+::-webkit-scrollbar-track {
+   border-radius: .2rem;  
+}
 
 body {
 	line-height: var(--line-height);
@@ -175,6 +196,9 @@ body {
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
+
+   scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
+   scrollbar-width: thin;
 }
 [bg=home] {
 	--background: url('../images/home/background-home-desktop.jpg');
@@ -221,8 +245,8 @@ body {
 	--leftNB: 3.438rem;
 	--topNB: 1.5rem;
 	--heightNav: 96px;
-	top: 40px;
-	right: 0;
+	top: 20px;
+	right: auto;
 	height: var(--heightNav);
 	z-index: 9;
 }
@@ -235,10 +259,10 @@ body {
 }
 .navbar-line {
 	position: absolute;
-	width: 35%;
+	width: 32%;
 	height: 1px;
 	top: calc(var(--topNB) * 2);
-	left: calc(var(--leftNB) + 7rem);
+	left: calc(var(--leftNB) + 6.8rem);
 	background: rgb(var(--white));
 	mix-blend-mode: normal;
 	opacity: 0.25;
@@ -295,11 +319,10 @@ body {
 }
 #app {
 	height: 100vh;
-	padding-top: 96px;
 }
 @media (min-width: 1200px) and (max-width: 1440px) {
 	.navbar-line {
-		width: 22%;
+		width: 32%;
 	}
 	.navbar-collapse {
 		--navcol: 56.125rem;
@@ -329,6 +352,7 @@ body {
 		--leftNB: 2.438rem;
 		--topNB: 1.5rem;
 		top: 0;
+		right: 5px;
 	}
 	.navbar-collapse {
 		--navcol: 28.125rem;
@@ -340,7 +364,8 @@ body {
 
 @media (min-width: 200px) and (max-width: 560px) {
 	#app {
-		height: max-content;	}
+		height: max-content;	
+	}
 	.navbar-collapse {
 		width: 254px;
 		height: 100vh;
@@ -348,7 +373,7 @@ body {
 		padding-top: 118px;
 		padding-left: 2rem;
 		padding-right: 2rem;
-		right: -254px;
+		right: -259px;
 		transition: right .4s ease-in-out;
 		transition-delay: .1s;
 	}

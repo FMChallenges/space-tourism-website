@@ -20,6 +20,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400;500;600&family=Bellefair&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="./assets/css/global-space.css">
+<script src="./assets/js/app.js"></script>
 </head>
 <body class="body-text" bg="home">
 
@@ -99,6 +100,60 @@
 					</div>
 				</div>
 			</section>
+		</template>
+
+		<!-- ========== PANTALLA DESTINATION ========== -->
+		<template id="destination">
+			<!-- CARGAMOS ESTILOS -->
+			<link rel="stylesheet" href="./assets/css/space-destination.css">
+			<section>
+				<div class="content">
+					<h4 class="barlow heading-5 text-uppercase fw-400">
+						<span class="fw-700">01</span> Pick your destination
+					</h4>
+					<div class="panels d-grid">
+						<div class="d-flex justify-content-center align-items-center">
+							<picture>
+								<picture id="picture">
+								 	<source data-srcset="./assets/images/destination/image-moon.webp 1x">
+								 	<img loading="lazy" class="w-100 h-100 object-fit-cover" alt="Moon" title="Moon" src="./assets/images/destination/image-moon.png">
+								</picture>
+						</div>
+						<div>
+							<div class="tabs">
+								<a href="#0" class="navbar-text barlow fw-400 text-decoration-none text-uppercase tab active">Moon</a>
+								<a href="#1" class="navbar-text barlow fw-400 text-decoration-none text-uppercase tab">Mars</a>
+								<a href="#2" class="navbar-text barlow fw-400 text-decoration-none text-uppercase tab">Europa</a>
+								<a href="#3" class="navbar-text barlow fw-400 text-decoration-none text-uppercase tab">Titan</a>
+							</div>
+							<div id="moon">
+								<div class="dataTitle heading-2 bellefair text-uppercase">
+									Moon
+								</div>
+								<p class="dataText body-text d-block">
+									See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.
+								</p>
+								<div class="line" style="background-color: #383B4B;"></div>
+								<div class="stats">
+									<div class="column">
+										<span class="d-block subheading-2 barlow">AVG. DISTANCE</span>
+										<div class="heading-5 bellefair dataKm">
+											<span id="km" data-val="384400">0</span> <span class="txt">km</span>
+										</div> 
+									</div>
+									<div class="column">
+										<span class="d-block subheading-2 barlow">Est. travel time</span>
+										<div class="heading-5 bellefair dataDays">
+											<span id="days" data-val="3">0</span> <span class="txt">days</span>
+										</div> 
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<script async defer type="module" src="./assets/js/destination.js"></script>
 		</template>
 	</main>
 

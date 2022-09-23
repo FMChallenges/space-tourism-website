@@ -33,7 +33,7 @@ This is how the completed page should look
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Space Tourism - Website](https://fmchallenges.github.io/space-tourism-website/)
 
 ## My process
 
@@ -54,6 +54,7 @@ I have added an action in "EXPLORER", that when pressing/clicking it will show a
 ### Useful resources
 
 - [Using templates and slots](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_templates_and_slots) - This article explains how you can use the <template> and <slot> elements to create a flexible template that can then be used to populate the shadow DOM of a web component.
+- [countUp.js](https://inorganik.github.io/countUp.js/) - CountUp.js is a dependency-free, lightweight JavaScript class that can be used to quickly create animations that display numerical data in a more interesting way.
 - [Vídeo of Pixabay](https://www.pexels.com/es-es/video/vista-de-la-tierra-por-la-noche-desde-el-espacio-854913/)
 
 ## Author
