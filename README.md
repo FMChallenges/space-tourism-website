@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Vista preliminar de como debe quedar](preview.jpg)
+![Vista previa](Screenshot.png)
 
 This is how the completed page should look 
 
