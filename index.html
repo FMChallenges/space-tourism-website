@@ -27,21 +27,20 @@
 	<main class="d-flex justify-content-between flex-column w-100 vh-100 scrollY-auto">
 	
 		<nav class="navbar position-fixed w-100">
-
+			<!-- Menu toggle -->
 			<div class="menu-toggle">
 				<span></span>
 				<span></span>
 				<span></span>
 			</div>
-
+			<!-- Logo -->
 			<a class="navbar-brand rounded-circle nav_link_toggle" href="#home">
 				<img src="./assets/images/shared/logo.svg" alt="log site menu" title="Space tourism website">
 			</a>
-
+			<!-- Linea -->
 			<div class="navbar-line"></div>
-
+			<!-- Menu -->
 			<div class="navbar-collapse">
-				
 				<div class="navbar-menu-content">
 					<div class="nav-item active">
 						<a href="#home" class="nav_link_toggle nav-link navbar-text">
@@ -68,17 +67,12 @@
 						</a>
 					</div>
 				</div>
-
 			</div>
-
 		</nav>
-
-
 		<!-- Para agregar la plantilla correnpondiente -->
 		<div id="app"></div>
-
 		<!-- ========== PANTALLA HOME ========== -->
-		<template id="home">
+		<template id="template_home">
 			<!-- CARGAMOS ESTILOS -->
 			<link rel="stylesheet" href="./assets/css/space-home.css">
 			<!-- CARGAMOS SECTION -->
@@ -101,9 +95,8 @@
 				</div>
 			</section>
 		</template>
-
 		<!-- ========== PANTALLA DESTINATION ========== -->
-		<template id="destination">
+		<template id="template_destination">
 			<!-- CARGAMOS ESTILOS -->
 			<link rel="stylesheet" href="./assets/css/space-destination.css">
 			<section>

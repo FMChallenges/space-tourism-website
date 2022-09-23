@@ -1,6 +1,7 @@
 const LoadPage = (page = 'home') => {
-	const GetTemplate = element("#" + page).content
-	element("#app").append(GetTemplate)
+	// Limpiamos la pantalla
+	element("#app").innerHTML = ''
+	element("#app").append(element("#template_" + page).content.cloneNode(true))
 }
 LoadPage('home')
 
@@ -23,8 +24,6 @@ on('click', ".nav_link_toggle", ItemLink => {
 	ChangeBackground(hash)
 	// Cambiamos el estado
 	LinkActive(link)
-	// Limpiamos la pantalla
-	element("#app").innerHTML = ''
 	// Cargamos nuevo contenido en pantalla
 	LoadPage(hash)
 })
