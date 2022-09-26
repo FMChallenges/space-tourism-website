@@ -77,19 +77,10 @@ section .content h4 span {
 .dots .dot.active {
    opacity: 1;
 }
-.alert {
-   position: fixed;
-   bottom: 10px;
-   right: 0;
-   background-color: #3335;
-   color: #FFF;
-   padding: 6px 12px;
-}
 @media screen and (max-width: 768px) {
 	section {
 		height: max-content;
-		padding-bottom: 620px;
-      outline: 1px solid red;
+		padding-bottom: 0px;
 	}
 	section .content {
 		width: 90%;
@@ -102,14 +93,43 @@ section .content h4 span {
       text-align: center;
    }
    #picture {
+      position: relative;
       width: 600px!important;
+      bottom: -42px!important;
       margin: 0 auto;
-      outline: 1px solid red;
+      right: 0!important;
    }
    .dots .dot {
       margin: 0 10px;
    }
 }
 @media (min-width: 200px) and (max-width: 560px) {
-
+   section .content h4.heading-5 {
+		text-align: center;
+	}
+	section .content > div {
+      display: flex;
+      flex-direction: column-reverse;
+      margin: 20px auto;
+   }
+	section .content > div #picture {
+      border-bottom: 1px solid rgb(var(--light-blue));
+      bottom: 0 !important;
+      top: 20px !important;
+      display: flex;
+      width: 100%!important;
+   }
+	section .content > div #picture img {
+      width: 80%!important;
+      margin: 0 auto;
+   }
+   .crew-role {
+      font-size: 1rem;
+   }
+   .crew-name {
+      font-size: 24px;
+   }
+   .dots {
+      bottom: 80%;
+   }
 }
