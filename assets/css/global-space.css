@@ -322,7 +322,7 @@ body {
 }
 @media (min-width: 1200px) and (max-width: 1440px) {
 	.navbar-line {
-		width: 32%;
+		width: 26%;
 	}
 	.navbar-collapse {
 		--navcol: 56.125rem;

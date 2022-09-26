@@ -40,7 +40,11 @@ const LinkActive = elem => {
 on('click', ".explorer", menu => {
 	// Creamos la etiquta video
 	const video = document.createElement("video")
-	const videoAttr = [['autoplay', ''], ['buffered', ''], ['loop', true]]
+	const videoAttr = [
+		['autoplay', ''], 
+		['buffered', ''], 
+		['loop', true]
+	]
 	videoAttr.forEach( attr => video.setAttribute(attr[0], attr[1]))
 	video.classList.add('video');
 	// Creamos la etiquta source

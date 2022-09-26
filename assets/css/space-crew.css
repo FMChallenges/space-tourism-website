@@ -1,0 +1,115 @@
+section {
+	height: 100vh;
+	display: grid;
+	place-items: end center;
+	padding-bottom: 1rem;
+}
+section .content {
+	width: 80%;
+	margin: 0 auto;
+	height: calc(100vh - (96px + 60px));
+	padding-bottom: 2rem;
+}
+section .content h4 {
+	line-height: 2.1rem;
+	letter-spacing: 0.295rem;
+}
+section .content h4 span {
+	mix-blend-mode: normal;
+	opacity: 0.25;
+}
+.crew-info {
+   width: 60%;
+}
+.crew-info .crew-role {
+	mix-blend-mode: normal;
+	opacity: 0.25;
+   margin-top: 6rem;
+}
+.crew-info .crew-name {
+   margin-top: 15px;
+   margin-bottom: 27px;
+   line-height: 3rem;
+}
+.crew-info .crew-bio {
+   color: rgb(var(--light-blue))
+}
+#picture {
+   width: max-content;
+   position: fixed;
+   right: 15%;
+   bottom: -10px;
+}
+#picture.douglas_hurley {
+   width: 26%;
+   right: 10%;
+}
+#picture.mark_shuttleworth {
+   width: 24%;
+}
+#picture.victor_glover {
+   width: 30%;
+   right: 10%;
+}
+#picture.anousheh_ansari {
+   width: 32%;
+   right: 10%;
+}
+.dots {
+   --hdot: 14px;
+   height: var(--hdot);
+   line-height: var(--hdot);
+   width: 100%;
+   bottom: -50px;
+}
+.dots .dot {
+   display: inline-block;
+   background-color: rgba(var(--white));
+   width: var(--hdot);
+   height: var(--hdot);
+   margin-right: 8px;
+   border-radius: 10em;
+	mix-blend-mode: normal;
+	opacity: 0.25;
+   cursor: pointer
+}
+.dots .dot:hover,
+.dots .dot.active {
+   opacity: 1;
+}
+.alert {
+   position: fixed;
+   bottom: 10px;
+   right: 0;
+   background-color: #3335;
+   color: #FFF;
+   padding: 6px 12px;
+}
+@media screen and (max-width: 768px) {
+	section {
+		height: max-content;
+		padding-bottom: 620px;
+      outline: 1px solid red;
+	}
+	section .content {
+		width: 90%;
+		height: max-content;
+		padding-bottom: 2rem;
+	}
+   .crew-info {
+      width: 90%;
+      margin: 0 auto;
+      text-align: center;
+   }
+   #picture {
+      width: 600px!important;
+      margin: 0 auto;
+      outline: 1px solid red;
+   }
+   .dots .dot {
+      margin: 0 10px;
+   }
+}
+@media (min-width: 200px) and (max-width: 560px) {
+
+}

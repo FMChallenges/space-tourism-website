@@ -15,7 +15,7 @@ execCountUp()
 on('click', '.tab', async tab => {
 	tab.preventDefault()
 	const loadTab = tab.target.href.split("#")[1]
-
+	
 	const FetchData = await fetch(location.href + "data.json")
 	let GetData = await FetchData.json()
 	GetData = GetData.destinations[loadTab]
@@ -37,6 +37,6 @@ on('click', '.tab', async tab => {
 }, true)
 
 const LinkActive = elem => {
-	element(".tab", true).forEach( e => e.classList.remove("active"))
+	removeClass(".tab", "active", true)
 	elem.className += " active"
 }
