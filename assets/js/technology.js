@@ -9,7 +9,8 @@ on("click", ".indications .indication", async ind => {
    const html = ['name', 'description']
    html.forEach( h => element(`.${h}`).innerHTML = getAlt([h]))
 
-   setData("#picture source", "srcset", data.images.landscape)
+   const sources = ['landscape', 'portrait']
+   element("#picture source", true).map( (source, who, array) =>  array[who].setAttribute("srcset", data.images[sources[who]]))
 
    const img = "#picture img"
 	const size = (screen.width <= 768) ? 'landscape' : 'portrait';
