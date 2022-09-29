@@ -1,0 +1,118 @@
+section {
+	height: 100vh;
+	display: grid;
+	place-items: end center;
+	padding-bottom: 1rem;
+}
+section .content {
+	width: 76%;
+	margin: 0 auto;
+	height: calc(100vh - (96px + 60px));
+	padding-bottom: 2rem;
+}
+section .content h4 {
+	line-height: 2.1rem;
+	letter-spacing: 0.295rem;
+}
+section .content h4 span {
+	mix-blend-mode: normal;
+	opacity: 0.25;
+}
+section .content > div {
+   height: 100%;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+}
+section .content > div .indications {
+   height: 100%;
+   width: 6rem;
+   gap: 1.8rem;
+   margin-right: 18px;
+}
+section .content > div .indications .indication {
+   width: 60px;
+   height: 60px;
+   line-height: 60px;
+   overflow: hidden;
+   outline: 1px solid rgba(var(--white), 0.25);
+}
+section .content > div .indications .indication.active {
+   background-color: rgb(var(--white));
+   color: rgb(var(--dark));
+}
+section .content > div .info {
+   width: 46%;
+}
+section .content > div .info p {
+   color: rgb(var(--light-blue))
+}
+section .content > div .image {
+   position: fixed;
+   right: 0;
+   width: calc(515px - 100px);
+   height: calc(527px - 100px);
+}
+.subtitle {
+	letter-spacing: 0.169rem;
+   line-height: 19px;
+   margin-bottom: 8px;
+   color: rgb(var(--light-blue))
+}
+.title {
+   line-height: 64px;
+   margin-bottom: 18px;
+}
+@media screen and (max-width: 768px) {
+	section {
+		height: max-content;
+		padding-bottom: 0px;
+	}
+	section .content {
+		width: 100%;
+		height: max-content;
+		padding-bottom: 2rem;
+	}
+   section .content h4 {
+      margin-left: 10%;
+   }
+   section .content > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column
+   }
+   section .content > div .image {
+      position: relative;
+      right: 0;
+      width: 100%;
+      height: auto;
+      margin-top: 60px;
+      margin-bottom: 56px;
+   }
+   section .content > div .indications {
+      flex-direction: row;
+      margin-right: 0;
+      margin-bottom: 44px;
+      width: 100%;
+   }
+   section .content > div .info {
+      text-align: center;
+      width: 65%;
+   }
+}
+@media (min-width: 200px) and (max-width: 560px) {
+   .subtitle {
+      font-size: 14px;
+   }
+   .name {
+      font-size: 24px;
+   }
+   .description {
+      font-size: 1rem;
+   }
+   section .content > div .info {
+      text-align: center;
+      width: 90%;
+   }
+}

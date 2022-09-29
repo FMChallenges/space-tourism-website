@@ -94,6 +94,7 @@
 					</div>
 				</div>
 			</section>
+			<script src="./assets/js/home.js"></script>
 		</template>
 		<!-- ========== PANTALLA DESTINATION ========== -->
 		<template id="template_destination">
@@ -107,7 +108,7 @@
 					<div class="panels d-grid">
 						<div class="d-flex justify-content-center align-items-center">
 							<picture id="picture">
-							 	<source data-srcset="./assets/images/destination/image-moon.webp 1x">
+							 	<source srcset="./assets/images/destination/image-moon.webp 1x">
 							 	<img loading="lazy" class="w-100 h-100 object-fit-cover" alt="Moon" title="Moon" src="./assets/images/destination/image-moon.png">
 							</picture>
 						</div>
@@ -170,7 +171,7 @@
 						</div>
 						<div>
 							<picture id="picture" class="douglas_hurley">
-								<source data-srcset="./assets/images/crew/image-douglas-hurley.webp 1x">
+								<source srcset="./assets/images/crew/image-douglas-hurley.webp 1x">
 								<img loading="lazy" class="w-100 object-fit-cover" alt="Douglas Hurley - Commander" title="Douglas Hurley" src="./assets/images/crew/image-douglas-hurley.png">
 							</picture>
 						</div>
@@ -178,6 +179,46 @@
 				</div>
 			</section>
 			<script async src="./assets/js/crew.js"></script>
+		</template>
+		<!-- ========== PANTALLA HOME ========== -->
+		<template id="template_technology">
+			<!-- CARGAMOS ESTILOS -->
+			<link rel="stylesheet" href="./assets/css/space-technology.css">
+			<section>
+				<div class="content">
+					<h4 class="barlow heading-5 text-uppercase fw-400">
+						<span class="fw-700">03</span> Space launch 101
+					</h4>
+					<div>
+						<div class="image">
+							<picture id="picture">
+							 	<source srcset="./assets/images/technology/image-launch-vehicle-landscape.jpg 1x" media="(max-width: 768px)">
+							 	<source srcset="./assets/images/technology/image-launch-vehicle-portrait.jpg 1x" media="(min-width: 768px)">
+							 	<img loading="lazy" class="w-100 h-100 object-fit-cover" alt="Launch vehicle" title="Launch vehicle" src="./assets/images/technology/image-launch-vehicle-portrait.jpg">
+							</picture>
+						</div>
+						<div class="indications d-flex justify-content-center align-items-center flex-column">
+							<div id="0" class="indication text-center rounded-circle one active">
+								<span class="pointer-events-none heading-4 bellefair">1</span>
+							</div>
+							<div id="1" class="indication text-center rounded-circle two">
+								<span class="pointer-events-none heading-4 bellefair">2</span>
+							</div>
+							<div id="2" class="indication text-center rounded-circle three">
+								<span class="pointer-events-none heading-4 bellefair">3</span>
+							</div>
+						</div>
+						<div class="info">
+							<div class="subtitle navbar-text barlow fw-400 text-uppercase">The terminology...</div>
+							<div class="title name bellefair heading-3 text-uppercase">Launch vehicle</div>
+							<div class="data">
+								<p class="d-block barlow body-text description">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<script async src="./assets/js/technology.js"></script>
 		</template>
 	</main>
 

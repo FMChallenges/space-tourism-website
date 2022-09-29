@@ -1,17 +1,21 @@
-// Cambiando crew
-on("click", ".dots .dot", async dot => {
+const changeCrew = async dot => {
    removeClass(".dots .dot", "active", true)
    dot.target.className += " active"
    let crewID = dot.target.id.split('_')[1];
+   // Extraemos la información del json
    const extraer = await extract()
-   const crew = extraer.crew[crewID]
+   const crew = getArray(extraer.crew[crewID])
+   // Básicamente son lo mismo
+   const html = ['role', 'name', 'bio']
+   html.forEach( h => element(`.crew-${h}`).innerHTML = crew[h])
 
-   element(".crew-role").innerHTML = crew.role
-   element(".crew-name").innerHTML = crew.name
-   element(".crew-bio").innerHTML = crew.bio
-   element("#picture source").setAttribute("data-srcset", crew.images.webp)
-	element("#picture img").setAttribute("src", crew.images.png)
-	element("#picture img").setAttribute("alt", crew.name + "-" + crew.role)
-	element("#picture img").setAttribute("title", crew.name)
-	element("#picture img").parentElement.className = crew.name.toLowerCase().replace(/ /g, '_')
-}, true)
+   setData("#picture source", "srcset", getImgWebp())
+
+   const img = "#picture img"
+   setData(img, "src", getImgPng())
+   setData(img, "alt", getAlt(['name', 'role']))
+   setData(img, "title", getAlt(['name']))
+   element(img).parentElement.className = getNameClass()
+}
+// Cambiando crew
+on("click", ".dots .dot", clickDot => changeCrew(clickDot), true)
